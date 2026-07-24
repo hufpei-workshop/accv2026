@@ -1,0 +1,220 @@
+/*
+ * HUFPEI workshop website.
+ * Based on Mike Pierce's Conference Website Template and the SORMMS 2024 site.
+ */
+@import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #fafafa;
+  color: #505050;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 60px auto;
+  max-width: 1000px;
+  text-align: left;
+  width: calc(100% - 32px);
+}
+
+a { color: #b8860b; text-decoration: none; }
+a.current { color: #52739e; }
+a.current:hover { color: #e82945; }
+a:hover { color: #b2132e; }
+a:active { color: #e82945; }
+
+h1, h2, h3, h4 {
+  clear: left;
+  color: #813c54;
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.2;
+  margin: 1.5em 0 1em;
+  text-shadow: 1px 1px 2px #d0d0d0;
+}
+h1 { font-size: 2.67em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.67em; }
+h4 { font-size: 1.33em; }
+
+p {
+  list-style: none;
+  margin: 24px auto;
+  max-width: 900px;
+  padding: 0;
+  text-align: left;
+  width: 90%;
+}
+
+li a, p a {
+  text-decoration: underline;
+  text-decoration-color: #b8860b;
+}
+
+ul.topic-list {
+  list-style: disc;
+  margin: 20px auto 26px;
+  max-width: 850px;
+  padding-left: 28px;
+  width: 88%;
+}
+ul.topic-list li { margin: 8px 0; }
+
+em, i { font-style: italic; }
+strong, b { font-weight: bold; }
+
+.banner {
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+  line-height: 0;
+  position: relative;
+}
+.banner img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.navigation {
+  border-collapse: collapse;
+  margin: 22px auto 26px;
+  max-width: 800px;
+  table-layout: fixed;
+  width: 80%;
+}
+.navigation td {
+  font-size: 1.67em;
+  padding: 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 33.333%;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 18px auto 28px;
+  max-width: 900px;
+  width: 90%;
+}
+.content-table th,
+.content-table td {
+  border: 1px solid #c9d4db;
+  padding: 9px 11px;
+  text-align: left;
+  vertical-align: top;
+}
+.content-table th {
+  background: #eaf2f5;
+  color: #365d70;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+.content-table .theme-col { width: 25%; }
+.content-table .date-col { width: 38%; }
+
+.person-grid {
+  border-collapse: separate;
+  border-spacing: 14px;
+  margin: 10px auto 28px;
+  table-layout: fixed;
+  width: 100%;
+}
+.person-grid td {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  padding: 12px 10px 14px;
+  text-align: center;
+  vertical-align: top;
+  width: 33.333%;
+}
+.person-grid img {
+  display: block;
+  height: 240px;
+  margin: 0 auto 10px;
+  max-width: 180px;
+  object-fit: cover;
+  width: 180px;
+}
+.person-grid a {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.12em;
+  font-weight: bold;
+}
+.person-grid .affiliation {
+  display: block;
+  line-height: 1.35;
+  margin-top: 3px;
+}
+
+.notice {
+  background: #f2f7fa;
+  border-left: 5px solid #52739e;
+  margin: 24px auto;
+  max-width: 900px;
+  padding: 16px 20px;
+  width: 90%;
+}
+
+.program-table {
+  border-collapse: collapse;
+  margin: 12px auto 24px;
+  width: 100%;
+}
+.program-table td { text-align: left; }
+.program-table .date {
+  padding: 6px 16px 6px 0;
+  text-align: right;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 145px;
+}
+.program-table .title {
+  color: #813c54;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.35em;
+  height: 32px;
+  padding: 6px 12px 6px 4px;
+  text-shadow: 1px 1px 2px #d0d0d0;
+  vertical-align: top;
+}
+.program-table .title-special {
+  color: #52739e;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  height: 32px;
+  padding: 8px 12px 8px 4px;
+  text-shadow: 1px 1px 2px #d0d0d0;
+  vertical-align: top;
+}
+
+footer {
+  font-size: 0.875em;
+  margin-top: 8em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 760px) {
+  body { margin: 20px auto 36px; width: calc(100% - 20px); }
+  h2 { font-size: 1.75em; }
+  h3 { font-size: 1.4em; }
+  p, .notice { width: 96%; }
+  .navigation { width: 100%; }
+  .navigation td { font-size: 1.12em; padding: 0 5px; }
+  .content-table { display: block; overflow-x: auto; width: 100%; }
+  .person-grid, .person-grid tbody, .person-grid tr, .person-grid td { display: block; width: 100%; }
+  .person-grid { border-spacing: 0; }
+  .person-grid td { margin-bottom: 14px; }
+  .program-table .date { width: 105px; }
+  .program-table .title, .program-table .title-special { font-size: 1.08em; }
+}
