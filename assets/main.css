@@ -241,9 +241,9 @@ footer {
     transition: transform 0.2s ease;
 }
 
-/* TTI-J（左）を少し大きく */
 .logo-item:nth-child(1) img {
-    height: 105px;
+    height: 90px !important;
+    transform: scale(1.15);
 }
 
 /* SIT（中央）をもう少し大きく */
