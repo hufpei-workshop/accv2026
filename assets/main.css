@@ -245,14 +245,19 @@ footer {
     transform: scale(1.05);
 }
 
-/* SITだけ少し大きく */
-.logo-item:nth-child(2) img {
-    max-height: 100px;
+/* TTI-J（左）を少し大きく */
+.logo-item:nth-child(1) img {
+    max-height: 95px;
 }
 
-/* KAKENHIだけ少し大きく */
+/* SIT（中央）をもう少し大きく */
+.logo-item:nth-child(2) img {
+    max-height: 105px;
+}
+
+/* KAKENHI（右）は元のサイズ */
 .logo-item:nth-child(3) img {
-    max-height: 100px;
+    max-height: 90px;
 }
 
 .ack-logos {
