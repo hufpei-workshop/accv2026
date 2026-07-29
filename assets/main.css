@@ -218,3 +218,24 @@ footer {
   .program-table .date { width: 105px; }
   .program-table .title, .program-table .title-special { font-size: 1.08em; }
 }
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.logo-container img {
+    max-height: 90px;
+    max-width: 260px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.05);
+}
