@@ -222,16 +222,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
+    gap: 30px;          /* ロゴ間の余白を少し狭く */
+    flex-wrap: nowrap;  /* 横一列を維持 */
     margin-top: 2em;
 }
 
 .logo-container img {
-    height: 120px !important;   /* ←右端(TTI-J)と同じ高さになるまで数値を調整 */
-    width: auto !important;
-    max-height: none !important;
-    max-width: none !important;
+    height: 95px;       /* 高さを揃える */
+    width: auto;        /* 縦横比を維持 */
+    max-width: 100%;    /* はみ出し防止 */
     object-fit: contain;
     display: block;
     transition: transform 0.2s ease;
@@ -239,6 +238,7 @@ footer {
 
 .logo-container img:hover {
     transform: scale(1.05);
+}
 }
 .ack-logos {
     display: flex;
