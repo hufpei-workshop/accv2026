@@ -220,24 +220,23 @@ footer {
 }
 .logo-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    gap: 20px;
+    gap: 40px;
     margin-top: 2em;
+    flex-wrap: nowrap;
 }
 
 .logo-item {
-    flex: 1;                  /* 3つとも同じ幅 */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo-item img {
-    height: 95px;
+    max-height: 90px;
     width: auto;
-    max-width: 100%;
+    height: auto;
     object-fit: contain;
     transition: transform 0.2s ease;
 }
@@ -245,7 +244,17 @@ footer {
 .logo-item img:hover {
     transform: scale(1.05);
 }
+
+/* SITだけ少し大きく */
+.logo-item:nth-child(2) img {
+    max-height: 100px;
 }
+
+/* KAKENHIだけ少し大きく */
+.logo-item:nth-child(3) img {
+    max-height: 100px;
+}
+
 .ack-logos {
     display: flex;
     justify-content: center;
@@ -257,7 +266,6 @@ footer {
 
 .ack-logos img {
     max-height: 90px;
-    max-width: 260px;
     width: auto;
     height: auto;
     object-fit: contain;
