@@ -228,10 +228,11 @@ footer {
 }
 
 .logo-container img {
-    height: 90px;         
-    width: auto;          
-    max-width: 260px;      
+    height: 110px;
+    width: auto;
+    max-width: 300px;
     object-fit: contain;
+}
     transition: transform 0.2s ease;
 }
 
