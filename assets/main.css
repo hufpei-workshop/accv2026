@@ -239,3 +239,22 @@ footer {
 .logo-container img:hover {
     transform: scale(1.05);
 }
+.ack-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.ack-logos img {
+    max-height: 90px;
+    max-width: 260px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+}
