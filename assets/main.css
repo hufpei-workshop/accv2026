@@ -220,23 +220,29 @@ footer {
 }
 .logo-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;          /* ロゴ間の余白を少し狭く */
-    flex-wrap: nowrap;  /* 横一列を維持 */
+    width: 100%;
+    gap: 20px;
     margin-top: 2em;
 }
 
-.logo-container img {
-    height: 95px;       /* 高さを揃える */
-    width: auto;        /* 縦横比を維持 */
-    max-width: 100%;    /* はみ出し防止 */
+.logo-item {
+    flex: 1;                  /* 3つとも同じ幅 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-item img {
+    height: 95px;
+    width: auto;
+    max-width: 100%;
     object-fit: contain;
-    display: block;
     transition: transform 0.2s ease;
 }
 
-.logo-container img:hover {
+.logo-item img:hover {
     transform: scale(1.05);
 }
 }
