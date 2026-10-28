@@ -284,3 +284,15 @@ footer {
 .logo-item:nth-child(3) img {
     height: 90px !important;
 }
+/* Oral Session 1: paper titles and authors */
+.program-table .paper-item {
+  color: #505050;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  text-shadow: none;
+  line-height: 1.5em;
+  height: auto;
+  padding: 6px 12px 6px 4px;
+  vertical-align: top;
+}
