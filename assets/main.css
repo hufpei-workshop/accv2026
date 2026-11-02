@@ -285,9 +285,10 @@ footer {
     height: 90px !important;
 }
 /* Oral Session 1: paper titles and authors */
+/* Oral Session papers */
 .program-table .paper-item {
-  color: #813c54;
-  font-family: 'Roboto Slab', serif;
+  color: #505050;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: normal;
   text-shadow: none;
@@ -296,6 +297,17 @@ footer {
   padding: 6px 12px 6px 4px;
   vertical-align: top;
 }
+
+/* Oral Session 1: Blue */
+.program-table .paper-item.oral1-paper {
+  color: #52739e;
+}
+
+/* Oral Session 2: Burgundy */
+.program-table .paper-item.oral2-paper {
+  color: #813c54;
+}
+
 /* Invited Talk speakers */
 .program-table .speaker-item {
   color: #813c54;
@@ -307,10 +319,6 @@ footer {
   height: auto;
   padding: 6px 12px 6px 4px;
   vertical-align: top;
-}
-/* Oral Session 1: Blue */
-.program-table .oral1-paper {
-  color: #52739e;
 }
 
 /* Oral Session 2: Burgundy */
