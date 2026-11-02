@@ -296,3 +296,15 @@ footer {
   padding: 6px 12px 6px 4px;
   vertical-align: top;
 }
+/* Invited Talk speakers */
+.program-table .speaker-item {
+  color: #813c54;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  font-weight: normal;
+  text-shadow: none;
+  line-height: 1.5em;
+  height: auto;
+  padding: 6px 12px 6px 4px;
+  vertical-align: top;
+}
