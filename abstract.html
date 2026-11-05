@@ -16,7 +16,6 @@
       scroll-margin-top: 1.5em;
     }
 
-    /* 写真と (名前+所属) を横並びにする設定 */
     .speaker-heading {
       display: flex !important;
       align-items: flex-start !important;
@@ -40,11 +39,13 @@
       margin: 0 !important;
     }
 
-    /* タイトルをアブスト本文の先頭（左端）に揃え、太字化する設定 */
-    .abstract-entry .talk-title {
-      display: block !important;
-      margin: 1em 0 0.5em !important;
+    /* アブストの先頭に揃えるタイトルのCSS */
+    .abstract-entry h3.talk-title {
+      margin: 1.5em 0 0.8em 0 !important;
       font-weight: bold !important;
+      font-size: 1.17em !important;
+      line-height: 1.4 !important;
+      display: block !important;
       clear: both !important;
     }
 
@@ -90,7 +91,7 @@
       </div>
     </div>
 
-    <p class="talk-title">Title: Understanding HOW and WHY Humans Act: Benchmarking Fine-Grained and Causal Video Reasoning</p>
+    <h3 class="talk-title">Understanding HOW and WHY Humans Act: Benchmarking Fine-Grained and Causal Video Reasoning</h3>
 
     <p>Understanding human activities in video has long been a central challenge in computer vision. Yet most benchmarks and models address primarily the surface level — recognizing what action is performed or what objects are present. For systems that must support humans in real-world tasks — assisting with manual work, assessing skills, or anticipating future behavior — this is insufficient. We need systems that can answer how and why.</p>
 
@@ -114,7 +115,7 @@
       </div>
     </div>
 
-    <p class="talk-title">Title: Grounding Humans in the 4D World with Contact</p>
+    <h3 class="talk-title">Grounding Humans in the 4D World with Contact</h3>
 
     <p>Monocular methods can recover accurate human bodies, but grounding them into the world remains challenging: bodies float, penetrate the scene, and feet slide across the ground. This talk argues that contact is the missing constraint, and follows how we have learned to exploit it, step by step. Humans first serve as a metric for the world, calibrating camera scale and constraining bundle adjustment. Contact then becomes an explicit correspondence between human and object surfaces, solved with optimal transport. Finally, contact is learned inside a feed-forward 4D reconstruction model and extend it to objects. The talk will close with open questions on moving from static contact to dynamics, where contact forces, momentum, and motion come together.</p>
 
@@ -134,7 +135,7 @@
       </div>
     </div>
 
-    <p class="talk-title">Title: Motion on Demand: Understanding, Controlling, and Generating Human Movement</p>
+    <h3 class="talk-title">Motion on Demand: Understanding, Controlling, and Generating Human Movement</h3>
 
     <p>In production workflows, a virtual character may need to follow a precise path, perform actions in a specified order, and move seamlessly between individual activities and interactions with others. These requirements motivate our research into developing practical human motion systems. In this talk, I will present our group’s work on understanding and generating human motion, showing how desired functionalities have shaped our research questions and methodological choices. I will discuss how the need to interpret user intent and action order motivates motion–language alignment, how precise spatial control leads to methods for enforcing constraints during generation, and how ongoing activities and social interactions motivate causal and streaming approaches to motion generation. Through these examples, I will illustrate how practical requirements guide the development of motion models toward greater controllability, temporal coherence, and efficiency, supporting their use in animation tools and interactive virtual humans.</p>
 
