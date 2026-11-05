@@ -20,7 +20,7 @@
       display: flex !important;
       align-items: flex-start !important;
       gap: 1.5em !important;
-      margin-bottom: 1.2em !important;
+      margin-bottom: 0.8em !important;
     }
 
     .speaker-photo {
@@ -28,6 +28,7 @@
       height: 160px !important;
       object-fit: cover !important;
       flex: 0 0 160px !important;
+      margin: 0 !important;
     }
 
     .speaker-heading h2 {
@@ -38,21 +39,29 @@
       display: block !important;
       margin: 0 !important;
     }
-/* タイトルをアブスト本文・写真の左端と完全に揃える設定 */
-.abstract-entry h3.talk-title {
-  margin: 1.2em 0 0.6em 0 !important;
-  padding: 0 !important;
-  font-weight: bold !important;
-  font-size: 1.15em !important;
-  line-height: 1.4 !important;
-  display: block !important;
-  clear: both !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-}
-    
+
+    /* タイトルとアブスト本文の横位置（左端）を完璧に揃える設定 */
+    .abstract-entry h3.talk-title,
+    .abstract-entry p {
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+      box-sizing: border-box !important;
+    }
+
+    .abstract-entry h3.talk-title {
+      margin-top: 1.2em !important;
+      margin-bottom: 0.5em !important;
+      font-weight: bold !important;
+      font-size: 1.15em !important;
+      line-height: 1.4 !important;
+      display: block !important;
+      clear: both !important;
+    }
+
     .abstract-entry p {
       line-height: 1.7;
+      margin-top: 0 !important;
+      margin-bottom: 1em !important;
     }
 
     .abstract-placeholder {
@@ -61,7 +70,7 @@
     }
 
     .back-link {
-      margin-top: 1.5em;
+      margin-top: 1.5em !important;
     }
 
     @media (max-width: 600px) {
