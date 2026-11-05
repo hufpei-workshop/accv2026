@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" type="text/css" media="all" href="assets/main.css">
+  <meta name="description" content="Abstracts of invited speakers at the HUFPEI workshop at ACCV 2026.">
+  <title>Abstracts | HUFPEI at ACCV 2026</title>
+
+  <style>
+    .abstract-entry {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 0 1em;
+      scroll-margin-top: 1.5em;
+    }
+
+    .speaker-heading {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5em;
+      margin-bottom: 1.2em;
+    }
+
+    .speaker-photo {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      flex: 0 0 160px;
+    }
+
+    .speaker-heading h2 {
+      margin: 0 0 0.25em;
+    }
+
+    .abstract-entry .affiliation {
+      display: block;
+      margin: 0 0 0.8em;
+    }
+
+    .abstract-entry .talk-title {
+      margin: 0.8em 0 0;
+    }
+
+    .abstract-entry h3 {
+      margin: 1em 0 0.5em;
+    }
+
+    .abstract-entry p {
+      line-height: 1.7;
+    }
+
+    .abstract-placeholder {
+      color: #777;
+      font-style: italic;
+    }
+
+    .back-link {
+      margin-top: 1.5em;
+    }
+
+    @media (max-width: 600px) {
+      .speaker-heading {
+        gap: 1em;
+      }
+
+      .speaker-photo {
+        width: 110px;
+        height: 110px;
+        flex-basis: 110px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="banner">
+    <img src="assets/banner.png" alt="International Workshop on Human Understanding, Future Prediction, and Embodied Intelligence">
+  </div>
+
+  <table class="navigation" aria-label="Primary navigation">
+    <tr>
+      <td><a title="Workshop Home Page" href="./">Home</a></td>
+      <td><a title="Workshop Registration" href="registration">Registration</a></td>
+      <td><a title="Workshop Program" href="program">Program</a></td>
+    </tr>
+  </table>
+
+  <h1 style="text-align:center;">Invited Speakers' Abstracts</h1>
+
+
+  <!-- Yoichi Sato -->
+  <section class="abstract-entry" id="yoichi-sato">
+
+    <div class="speaker-heading">
+      <img class="speaker-photo" src="assets/yoichi-sato.jpg" alt="Yoichi Sato">
+      <div class="speaker-info">
+        <h2>Yoichi Sato</h2>
+        <p class="affiliation">The University of Tokyo (Japan)</p>
+        <p class="talk-title"><strong>Title:</strong> Understanding HOW and WHY Humans Act: Benchmarking Fine-Grained and Causal Video Reasoning</p>
+      </div>
+    </div>
+
+    <h3>Abstract</h3>
+
+    <p>Understanding human activities in video has long been a central challenge in computer vision. Yet most benchmarks and models address primarily the surface level — recognizing what action is performed or what objects are present. For systems that must support humans in real-world tasks — assisting with manual work, assessing skills, or anticipating future behavior — this is insufficient. We need systems that can answer how and why.</p>
+
+    <p>In this talk, I present two complementary benchmarks that push video understanding beyond recognition toward deeper comprehension. The first targets the how: how hands manipulate objects, how manipulation styles vary, and how objects physically change as a result. Built on Ego4D across 112 real-world domains, it provides 11.1K human-verified QA pairs spanning six question types — from action and process to part-level state changes — along with 10.3K segmentation masks. The second targets the why: can a model identify and spatiotemporally ground the causal chain explaining why a video event occurred? With 2,066 causal questions over 1,015 videos, it requires localizing cause-and-effect evidence with bounding-box precision across time.</p>
+
+    <p>Evaluating state-of-the-art vision-language models on both benchmarks reveals a consistent finding: models fail not at recognition, but at grounded spatiotemporal reasoning — about dynamics, spatial relationships, and causal structure. Closing this gap is essential for deeper human activity understanding, with implications for skill assessment, human-robot collaboration, and embodied AI.</p>
+
+    <p class="back-link"><a href="./#invited-speakers">Back to Invited speakers</a></p>
+
+  </section>
+
+
+  <!-- Angela Yao -->
+  <section class="abstract-entry" id="angela-yao">
+
+    <div class="speaker-heading">
+      <img class="speaker-photo" src="assets/angela-yao.jpeg" alt="Angela Yao">
+      <div class="speaker-info">
+        <h2>Angela Yao</h2>
+        <p class="affiliation">National University of Singapore (Singapore)</p>
+        <p class="talk-title"><strong>Title:</strong> Grounding Humans in the 4D World with Contact</p>
+      </div>
+    </div>
+
+    <h3>Abstract</h3>
+
+    <p>Monocular methods can recover accurate human bodies, but grounding them into the world remains challenging: bodies float, penetrate the scene, and feet slide across the ground. This talk argues that contact is the missing constraint, and follows how we have learned to exploit it, step by step. Humans first serve as a metric for the world, calibrating camera scale and constraining bundle adjustment. Contact then becomes an explicit correspondence between human and object surfaces, solved with optimal transport. Finally, contact is learned inside a feed-forward 4D reconstruction model and extend it to objects. The talk will close with open questions on moving from static contact to dynamics, where contact forces, momentum, and motion come together.</p>
+
+    <p class="back-link"><a href="./#invited-speakers">Back to Invited speakers</a></p>
+
+  </section>
+
+
+  <!-- Kent Fujiwara -->
+  <section class="abstract-entry" id="kent-fujiwara">
+
+    <div class="speaker-heading">
+      <img class="speaker-photo" src="assets/kent-fujiwara.png" alt="Kent Fujiwara">
+      <div class="speaker-info">
+        <h2>Kent Fujiwara</h2>
+        <p class="affiliation">LINE Yahoo (Japan)</p>
+        <p class="talk-title"><strong>Title:</strong> Motion on Demand: Understanding, Controlling, and Generating Human Movement</p>
+      </div>
+    </div>
+
+    <h3>Abstract</h3>
+
+    <p>In production workflows, a virtual character may need to follow a precise path, perform actions in a specified order, and move seamlessly between individual activities and interactions with others. These requirements motivate our research into developing practical human motion systems. In this talk, I will present our group’s work on understanding and generating human motion, showing how desired functionalities have shaped our research questions and methodological choices. I will discuss how the need to interpret user intent and action order motivates motion–language alignment, how precise spatial control leads to methods for enforcing constraints during generation, and how ongoing activities and social interactions motivate causal and streaming approaches to motion generation. Through these examples, I will illustrate how practical requirements guide the development of motion models toward greater controllability, temporal coherence, and efficiency, supporting their use in animation tools and interactive virtual humans.</p>
+
+    <p class="back-link"><a href="./#invited-speakers">Back to Invited speakers</a></p>
+
+  </section>
+
+
+  <!-- Gim Hee Lee -->
+  <section class="abstract-entry" id="gim-hee-lee">
+
+    <div class="speaker-heading">
+      <img class="speaker-photo" src="assets/gim-hee-lee.png" alt="Gim Hee Lee">
+      <div class="speaker-info">
+        <h2>Gim Hee Lee</h2>
+        <p class="affiliation">National University of Singapore (Singapore)</p>
+      </div>
+    </div>
+
+    <h3>Abstract</h3>
+
+    <p class="abstract-placeholder">Abstract will be added soon.</p>
+
+    <p class="back-link"><a href="./#invited-speakers">Back to Invited speakers</a></p>
+
+  </section>
+
+
+  <!-- Matthew Walter -->
+  <section class="abstract-entry" id="matthew-walter">
+
+    <div class="speaker-heading">
+      <img class="speaker-photo" src="assets/matthew-walter.jpg" alt="Matthew Walter">
+      <div class="speaker-info">
+        <h2>Matthew Walter</h2>
+        <p class="affiliation">Toyota Technological Institute at Chicago (USA)</p>
+      </div>
+    </div>
+
+    <h3>Abstract</h3>
+
+    <p class="abstract-placeholder">Abstract will be added soon.</p>
+
+    <p class="back-link"><a href="./#invited-speakers">Back to Invited speakers</a></p>
+
+  </section>
+
+
+  <!-- Taku Komura -->
+  <section class="abstract-entry" id="taku-komura">
+
+    <div class="speaker-heading">
+      <img class="speaker-photo" src="assets/taku-komura.jpg" alt="Taku Komura">
+      <div class="speaker-info">
+        <h2>Taku Komura</h2>
+        <p class="affiliation">The University of Hong Kong (Hong Kong)</p>
+      </div>
+    </div>
+
+    <h3>Abstract</h3>
+
+    <p class="abstract-placeholder">Abstract will be added soon.</p>
+
+    <p class="back-link"><a href="./#invited-speakers">Back to Invited speakers</a></p>
+
+  </section>
+
+
+  <footer>
+    <p style="text-align:center;">© HUFPEI at ACCV 2026</p>
+  </footer>
+
+</body>
+</html>
