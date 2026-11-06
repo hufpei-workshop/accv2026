@@ -325,3 +325,9 @@ footer {
 .program-table .oral2-paper {
   color: #813c54;
 }
+.abstract-entry .affiliation {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35em;
+  margin: 0;
+}
