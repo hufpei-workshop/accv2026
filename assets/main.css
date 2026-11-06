@@ -1,3 +1,4 @@
+```css
 /*
  * HUFPEI workshop website.
  * Based on Mike Pierce's Conference Website Template and the SORMMS 2024 site.
@@ -218,6 +219,7 @@ footer {
   .program-table .date { width: 105px; }
   .program-table .title, .program-table .title-special { font-size: 1.08em; }
 }
+
 .logo-container {
     display: flex;
     justify-content: center;
@@ -255,6 +257,7 @@ footer {
 .logo-item:nth-child(3) img {
     height: 90px;
 }
+
 .ack-logos {
     display: flex;
     justify-content: center;
@@ -273,6 +276,7 @@ footer {
     padding: 12px;
     border-radius: 10px;
 }
+
 .logo-item:nth-child(1) img {
     height: 105px !important;
 }
@@ -284,6 +288,7 @@ footer {
 .logo-item:nth-child(3) img {
     height: 90px !important;
 }
+
 /* Oral Session 1: paper titles and authors */
 /* Oral Session papers */
 .program-table .paper-item {
@@ -325,31 +330,4 @@ footer {
 .program-table .oral2-paper {
   color: #813c54;
 }
-
-/* Invited Speakers' Abstracts: affiliation layout */
-
-/* 写真の横にある名前・所属の領域 */
-.abstract-entry .speaker-info {
-  flex: 0 0 auto;
-  width: max-content;
-  max-width: none;
-}
-
-/* 大学名と国名を必ず同じ行に表示 */
-.abstract-entry p.affiliation {
-  display: block;
-  width: max-content !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0;
-  white-space: nowrap !important;
-  line-height: 1.5;
-}
-
-/* 大学名と国名 */
-.abstract-entry .affiliation .university,
-.abstract-entry .affiliation .country {
-  display: inline !important;
-  white-space: nowrap !important;
-}
-
+```
