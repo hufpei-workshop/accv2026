@@ -325,13 +325,31 @@ footer {
 .program-table .oral2-paper {
   color: #813c54;
 }
-.abstract-entry .affiliation {
-  display: block;
-  white-space: nowrap;
-  margin: 0;
+
+/* Invited Speakers' Abstracts: affiliation layout */
+
+/* 写真の横にある名前・所属の領域 */
+.abstract-entry .speaker-info {
+  flex: 0 0 auto;
+  width: max-content;
+  max-width: none;
 }
 
-.abstract-entry .university,
-.abstract-entry .country {
-  display: inline;
+/* 大学名と国名を必ず同じ行に表示 */
+.abstract-entry p.affiliation {
+  display: block;
+  width: max-content !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0;
+  white-space: nowrap !important;
+  line-height: 1.5;
 }
+
+/* 大学名と国名 */
+.abstract-entry .affiliation .university,
+.abstract-entry .affiliation .country {
+  display: inline !important;
+  white-space: nowrap !important;
+}
+
