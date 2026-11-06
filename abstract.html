@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,12 +36,20 @@
       margin: 0 0 0.25em;
     }
 
+    /* 所属大学名と国名を横並びに統一 */
     .abstract-entry .affiliation {
-      display: block;
+      display: flex;
+      align-items: baseline;
+      gap: 0.35em;
       margin: 0;
     }
 
-    /* 写真の下に配置し、アブスト本文と左端を完全に一致させる太字タイトル */
+    .abstract-entry .university,
+    .abstract-entry .country {
+      display: inline;
+    }
+
+    /* タイトル */
     .abstract-entry .talk-title {
       margin: 1em 0 0.5em 0;
       padding: 0;
@@ -87,19 +96,19 @@
   <!-- Yoichi Sato -->
   <section class="abstract-entry" id="yoichi-sato">
 
-    <!-- 1. 写真と名前・所属のみを横並びブロックに配置 -->
     <div class="speaker-heading">
       <img class="speaker-photo" src="assets/yoichi-sato.jpg" alt="Yoichi Sato">
       <div class="speaker-info">
         <h2>Yoichi Sato</h2>
-        <p class="affiliation">The University of Tokyo (Japan)</p>
+        <p class="affiliation">
+          <span class="university">The University of Tokyo</span>
+          <span class="country">(Japan)</span>
+        </p>
       </div>
     </div>
 
-    <!-- 2. タイトルは写真ブロックの外（アブスト本文と同じ並び）に配置することで左端を統一 -->
     <p class="talk-title"><strong>Title:</strong> Understanding HOW and WHY Humans Act: Benchmarking Fine-Grained and Causal Video Reasoning</p>
 
-    <!-- 3. アブスト本文 -->
     <p>Understanding human activities in video has long been a central challenge in computer vision. Yet most benchmarks and models address primarily the surface level — recognizing what action is performed or what objects are present. For systems that must support humans in real-world tasks — assisting with manual work, assessing skills, or anticipating future behavior — this is insufficient. We need systems that can answer how and why.</p>
 
     <p>In this talk, I present two complementary benchmarks that push video understanding beyond recognition toward deeper comprehension. The first targets the how: how hands manipulate objects, how manipulation styles vary, and how objects physically change as a result. Built on Ego4D across 112 real-world domains, it provides 11.1K human-verified QA pairs spanning six question types — from action and process to part-level state changes — along with 10.3K segmentation masks. The second targets the why: can a model identify and spatiotemporally ground the causal chain explaining why a video event occurred? With 2,066 causal questions over 1,015 videos, it requires localizing cause-and-effect evidence with bounding-box precision across time.</p>
@@ -118,7 +127,10 @@
       <img class="speaker-photo" src="assets/angela-yao.jpeg" alt="Angela Yao">
       <div class="speaker-info">
         <h2>Angela Yao</h2>
-        <p class="affiliation">National University of Singapore (Singapore)</p>
+        <p class="affiliation">
+          <span class="university">National University of Singapore</span>
+          <span class="country">(Singapore)</span>
+        </p>
       </div>
     </div>
 
@@ -138,7 +150,10 @@
       <img class="speaker-photo" src="assets/kent-fujiwara.png" alt="Kent Fujiwara">
       <div class="speaker-info">
         <h2>Kent Fujiwara</h2>
-        <p class="affiliation">LINE Yahoo (Japan)</p>
+        <p class="affiliation">
+          <span class="university">LINE Yahoo</span>
+          <span class="country">(Japan)</span>
+        </p>
       </div>
     </div>
 
@@ -158,7 +173,10 @@
       <img class="speaker-photo" src="assets/gim-hee-lee.png" alt="Gim Hee Lee">
       <div class="speaker-info">
         <h2>Gim Hee Lee</h2>
-        <p class="affiliation">National University of Singapore (Singapore)</p>
+        <p class="affiliation">
+          <span class="university">National University of Singapore</span>
+          <span class="country">(Singapore)</span>
+        </p>
       </div>
     </div>
 
@@ -176,7 +194,10 @@
       <img class="speaker-photo" src="assets/matthew-walter.jpg" alt="Matthew Walter">
       <div class="speaker-info">
         <h2>Matthew Walter</h2>
-        <p class="affiliation">Toyota Technological Institute at Chicago (USA)</p>
+        <p class="affiliation">
+          <span class="university">Toyota Technological Institute at Chicago</span>
+          <span class="country">(USA)</span>
+        </p>
       </div>
     </div>
 
@@ -188,13 +209,16 @@
 
 
   <!-- Taku Komura -->
- <section class="abstract-entry" id="taku-komura">
+  <section class="abstract-entry" id="taku-komura">
 
     <div class="speaker-heading">
       <img class="speaker-photo" src="assets/taku-komura.jpg" alt="Taku Komura">
       <div class="speaker-info">
         <h2>Taku Komura</h2>
-        <p class="affiliation">The University of Hong Kong (Hong Kong)</p>
+        <p class="affiliation">
+          <span class="university">The University of Hong Kong</span>
+          <span class="country">(Hong Kong)</span>
+        </p>
       </div>
     </div>
 
@@ -204,9 +228,11 @@
 
   </section>
 
+
   <footer>
     <p style="text-align:center;">© HUFPEI at ACCV 2026</p>
   </footer>
 
 </body>
 </html>
+```
