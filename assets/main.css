@@ -326,8 +326,12 @@ footer {
   color: #813c54;
 }
 .abstract-entry .affiliation {
-  display: flex;
-  align-items: baseline;
-  gap: 0.35em;
+  display: block;
+  white-space: nowrap;
   margin: 0;
+}
+
+.abstract-entry .university,
+.abstract-entry .country {
+  display: inline;
 }
