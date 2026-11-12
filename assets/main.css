@@ -1,4 +1,4 @@
-```css
+
 /*
  * HUFPEI workshop website.
  * Based on Mike Pierce's Conference Website Template and the SORMMS 2024 site.
@@ -330,4 +330,20 @@ footer {
 .program-table .oral2-paper {
   color: #813c54;
 }
-```
+/* Make Oral Session papers match Invited Talk speaker typography */
+.program-table td.paper-item {
+  font-family: 'Roboto Slab', serif !important;
+  font-size: 1em !important;
+  font-weight: normal !important;
+  line-height: 1.5em !important;
+  text-shadow: none !important;
+}
+
+/* Keep Oral Session colors */
+.program-table td.paper-item.oral1-paper {
+  color: #52739e !important;
+}
+
+.program-table td.paper-item.oral2-paper {
+  color: #813c54 !important;
+}
